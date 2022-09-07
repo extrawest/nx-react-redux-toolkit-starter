@@ -7,6 +7,7 @@
   "template.pageNotFound": "Page not found",
   "template.password": "Password",
   "template.returnToDashboard": "Return to dashboard",
+  "template.signOut": "Sign out",
   "template.units": "Units",
   "invalidemail": "Enter a valid email format",
   "maxNumberText": "This field must be at most ${max}",
@@ -15,5 +16,6 @@
   "minStringText": "This field must be at least ${min} characters",
   "oneCharacter": "Must be at least 1 number or letter",
 	"onlyNumbers": "Only digit number",
-  "required": "This field is required"
+  "required": "This field is required",
+  "validUrlText": "Must be a valid URL"
 }

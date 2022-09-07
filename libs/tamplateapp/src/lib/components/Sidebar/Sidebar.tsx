@@ -82,7 +82,7 @@ export const Sidebar: FC = () => {
 				isShowText
 			>
 				{intl.formatMessage({
-					id: "admin.signOut",
+					id: "template.signOut",
 					defaultMessage: "Sign Out"
 				})}
 			</Button>
