@@ -23,10 +23,9 @@ export const Sidebar: FC = () => {
 	const { isLoading } = useTypedSelector(logOut.select());
 
 	const handleLogOut = () => {
-		// dispatch(logOut.initiate()).then(() => navigate("/login"));
-		
+		// logout logic...
 		dispatch(updateIsLoggedIn(false));
-		navigate("/login");
+		navigate(AppRouteEnum.LOGIN);
 	};
 
 	return (

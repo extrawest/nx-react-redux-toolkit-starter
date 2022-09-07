@@ -5,6 +5,7 @@ import { FormikHelpers } from "formik";
 import { updateIsLoggedIn } from "@mono-redux-starter/redux";
 import { LoginForm, Values } from "../../forms/LoginForm";
 import { useTypedDispatch } from "../../store";
+import { AppRouteEnum } from "../../types";
 import { styles } from "./LoginContainer.styles";
 
 export const LoginContainer: FC = () => {
@@ -22,7 +23,7 @@ export const LoginContainer: FC = () => {
 		// login logic...
 
 		dispatch(updateIsLoggedIn(true));
-		navigate("/");
+		navigate(AppRouteEnum.DASHBOARD);
 
 		form.setSubmitting(false);
 	};

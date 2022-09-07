@@ -49,12 +49,14 @@ react_app
     |   |   ├── permissions
     |   |   |   ├── ...
     |   |   ├── types
-    |   |   |   ├── ...
+    |   |   |   ├── dto
+    |   |   |   ├── interfaces
+    |   |   |   ├── enums
     |   |   ├── ui
     |   |   |   ├── ...
     |   |   ├── utils
     |   |   |   ├── ...
-    └── template
+    └── templateapp
         └── src
             ├── assets
             │  ├── images
@@ -70,15 +72,15 @@ react_app
             │ └── ...
             ├── layouts
             |   └── ...
+            ├── routes
+            |   └── ...
+            ├── forms
+            |   └── ...
             ├── containers
             │   └── ...
             ├── utils
             |   ├── ....
-    ├── App.tsx
-    ├── index.tsx
-    ├── setupTests.js
-    ├── serviceWorker.js
-    └── reportWebVitals.js
+            |──...
 
 
 # Available Scripts
