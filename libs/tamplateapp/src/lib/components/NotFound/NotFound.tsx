@@ -27,7 +27,7 @@ export const NotFound: FC = () => {
 				variant='h2'
 			>
 				{intl.formatMessage({
-					id: "admin.pageNotFound",
+					id: "template.pageNotFound",
 					defaultMessage: "Page Not Found"
 				})}
 			</Typography>
@@ -39,7 +39,7 @@ export const NotFound: FC = () => {
 					variant='h4'
 				>
 					{intl.formatMessage({
-						id: "admin.returnToDashboard",
+						id: "template.returnToDashboard",
 						defaultMessage: "Return To Dashboard"
 					})}
 				</Typography>

@@ -7,22 +7,22 @@ export const getRouteTitle: GetRouteTitle = (
 	switch (title) {
 		case AppRouteTitleEnum.LOGIN:
 			return intl.formatMessage({
-				id: "admin.login",
+				id: "template.login",
 				defaultMessage: "Log In"
 			});
 		case AppRouteTitleEnum.DASHBOARD:
 			return intl.formatMessage({
-				id: "admin.dashboard",
+				id: "template.dashboard",
 				defaultMessage: "Dashboard"
 			});
 		case AppRouteTitleEnum.UNITS:
 			return intl.formatMessage({
-				id: "admin.units",
+				id: "template.units",
 				defaultMessage: "Units"
 			});
 		default:
 			return intl.formatMessage({
-				id: "admin.pageNotFound",
+				id: "template.pageNotFound",
 				defaultMessage: "Page Not Found"
 			});
 	}

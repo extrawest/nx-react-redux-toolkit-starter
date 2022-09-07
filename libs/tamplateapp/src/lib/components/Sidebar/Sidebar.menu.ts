@@ -6,7 +6,7 @@ export const getContentLinks = (intl: IntlShape): Array<MenuItemProps> => [
 	{
 		href: AppRouteEnum.UNITS,
 		title: intl.formatMessage({
-			id: "admin.units",
+			id: "template.units",
 			defaultMessage: "Units"
 		})
 	},

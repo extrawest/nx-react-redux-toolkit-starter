@@ -58,7 +58,7 @@ export const Sidebar: FC = () => {
 				}}
 			>
 				{intl.formatMessage({
-					id: "admin.editor",
+					id: "template.editor",
 					defaultMessage: "Editor"
 				})}
 			</Typography>

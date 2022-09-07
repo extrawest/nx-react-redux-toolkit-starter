@@ -16,7 +16,7 @@ export const LoginForm: FC<LoginFormProps> = ({
 	const intl = useIntl();
 
 	const loginText = intl.formatMessage({
-		id: "admin.email",
+		id: "template.email",
 		defaultMessage: "Email"
 	});
 
@@ -40,7 +40,7 @@ export const LoginForm: FC<LoginFormProps> = ({
 							variant="h1"
 						>
 							{intl.formatMessage({
-								id: "admin.login",
+								id: "template.login",
 								defaultMessage: "Log In"
 							})}
 						</Typography>
@@ -59,7 +59,7 @@ export const LoginForm: FC<LoginFormProps> = ({
 								sx={loginStyles.textInput}
 								title={""}
 								placeholder={intl.formatMessage({
-										id: "admin.password",
+										id: "template.password",
 										defaultMessage: "Password"
 									})}
 								variant="filled"
@@ -75,7 +75,7 @@ export const LoginForm: FC<LoginFormProps> = ({
 							isLoading={isLoading}
 						>
 							{intl.formatMessage({
-								id: "admin.go",
+								id: "template.go",
 								defaultMessage: "Go"
 							})}
 						</Button>

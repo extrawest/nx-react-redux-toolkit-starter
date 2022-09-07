@@ -1,5 +1,19 @@
 {
-  "template.hi": "Hello world",
+  "template.dashboard": "Dashboard",
+  "template.editor": "Editor",
+  "template.email": "Email",
+  "template.go": "Go",
+  "template.login": "Log In",
   "template.pageNotFound": "Page not found",
-  "template.units": "Units"
+  "template.password": "Password",
+  "template.returnToDashboard": "Return to dashboard",
+  "template.units": "Units",
+  "invalidemail": "Enter a valid email format",
+  "maxNumberText": "This field must be at most ${max}",
+  "maxStringText": "This field must be at most ${max} characters",
+  "minNumberText": "This field must be at least ${min}",
+  "minStringText": "This field must be at least ${min} characters",
+  "oneCharacter": "Must be at least 1 number or letter",
+	"onlyNumbers": "Only digit number",
+  "required": "This field is required"
 }
