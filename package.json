@@ -3,9 +3,19 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve",
-    "build": "nx build",
-    "test": "nx test"
+    "update": "nx migrate latest",
+    "start:template": "nx serve template",
+    "build:template": "nx build template --skip-nx-cache --prod",
+    "run:many": "nx run-many --target=build --projects=template --prod",
+    "lint:template": "nx lint --project=template",
+    "lint": "nx workspace-lint && nx lint",
+    "lint:all": "nx run-many --target=lint --all --maxWarnings=0",
+    "lint:all:fix": "nx run-many --target=lint --all --fix --maxWarnings=0",
+    "e2e:template": "nx e2e template-e2e --browser chrome --watch",
+    "extract-messages": "formatjs extract apps/**/*.{ts,tsx} libs/**/*.{ts,tsx,json} --out-file libs/shared/i18n/en.json --format formatter.js",
+    "test:templateapp": "nx test templateapp --watch --updateSnapshot",
+    "test:template": "nx test template --watch --updateSnapshot",
+    "test:ci": "nx run-many --target=test --all --parallel=5 --maxParallel=10 --updateSnapshot --ci --clearCache"
   },
   "private": true,
   "dependencies": {

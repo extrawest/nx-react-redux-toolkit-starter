@@ -1,94 +1,144 @@
 
+### Project structure
+```text
+react_app
+├──  .env
+├──  .env.dist
+├── tsconfig.base.json
+├── workspace.json
+├── .eslintrc
+├── .editorconfig
+├── .prettierrc
+├── .prettierignore
+├── .nxignore
+├──  package.json
+├──  package-lock.json
+├── apps
+    ├── template
+        ├── favicon.ico
+        ├── index.html
+        |── main.tsx
+        ├── src
+        |    ├── app
+        |    └── assets
+        |    └── environments
+        |    └── pages
+        |    └── routes
+        |    └── theme
+    ├── template-e2e
+    |  └── ...
+├── libs
+    ├── redux
+    |   |──src 
+    |   |   ├── apis
+    |   |   |   ├── ...
+    |   |   ├── axios
+    |   |   |   ├── ...
+    |   |   ├── middleware
+    |   |   |   ├── ...
+    |   |   ├── slices
+    |   |       ├── ...          
+│   ├── shared
+    |   |──src 
+    |   |   ├── hocs
+    |   |   |   ├── ...
+    |   |   ├── hooks
+    |   |   |   ├── ...
+    |   |   ├── i18n
+    |   |   |   ├── ...
+    |   |   ├── permissions
+    |   |   |   ├── ...
+    |   |   ├── types
+    |   |   |   ├── ...
+    |   |   ├── ui
+    |   |   |   ├── ...
+    |   |   ├── utils
+    |   |   |   ├── ...
+    └── template
+        └── src
+            ├── assets
+            │  ├── images
+            |  └── ...
+            ├── components
+            |  ├── common
+            |  |  ├── ...
+            |  |  └── ...
+            │  └── ...
+            ├── hocs
+            │ └── ...
+            ├── hooks
+            │ └── ...
+            ├── layouts
+            |   └── ...
+            ├── containers
+            │   └── ...
+            ├── utils
+            |   ├── ....
+    ├── App.tsx
+    ├── index.tsx
+    ├── setupTests.js
+    ├── serviceWorker.js
+    └── reportWebVitals.js
 
-# MonoReduxStarter
 
-This project was generated using [Nx](https://nx.dev).
+# Available Scripts
 
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
+Expected node version ">=12"
 
-🔎 **Smart, Fast and Extensible Build System**
+Clone the repo on your computer. In your terminal, cd into the directory you just added
+To install all dependencies, run
 
-## Adding capabilities to your workspace
+npm i || yarn install
 
-Nx supports many plugins which add capabilities for developing different types of applications and different tools.
-
-These capabilities include generating applications, libraries, etc as well as the devtools to test, and build projects as well.
-
-Below are our core plugins:
-
-- [React](https://reactjs.org)
-  - `npm install --save-dev @nrwl/react`
-- Web (no framework frontends)
-  - `npm install --save-dev @nrwl/web`
-- [Angular](https://angular.io)
-  - `npm install --save-dev @nrwl/angular`
-- [Nest](https://nestjs.com)
-  - `npm install --save-dev @nrwl/nest`
-- [Express](https://expressjs.com)
-  - `npm install --save-dev @nrwl/express`
-- [Node](https://nodejs.org)
-  - `npm install --save-dev @nrwl/node`
-
-There are also many [community plugins](https://nx.dev/community) you could add.
-
-## Generate an application
-
-Run `nx g @nrwl/react:app my-app` to generate an application.
-
-> You can use any of the plugins above to generate applications as well.
-
-When using Nx, you can create multiple applications and libraries in the same workspace.
-
-## Generate a library
-
-Run `nx g @nrwl/react:lib my-lib` to generate a library.
-
-> You can also use any of the plugins above to generate libraries as well.
-
-Libraries are shareable across libraries and applications. They can be imported from `@mono-redux-starter/mylib`.
+## Development
 
 ## Development server
 
-Run `nx serve my-app` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+For a dev templatel server run: 
+`npm run start:template`
+or
+`yarn start:template`.
 
-## Code scaffolding
+Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
-Run `nx g @nrwl/react:component my-component --project=my-app` to generate a new component.
 
 ## Build
 
-Run `nx build my-app` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `npm run build:template` to build the template application. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+Run `npm run run:many` to build all projects. The build artifacts will be stored in the `dist/` directory. Use this command for CI
 
-Run `nx test my-app` to execute the unit tests via [Jest](https://jestjs.io).
+## Lint
 
-Run `nx affected:test` to execute the unit tests affected by a change.
+Run `npm run lint` to check the lint for all workspace.
 
-## Running end-to-end tests
+Run `npm run lint:all` to check the lint for all applications, libs.
 
-Run `nx e2e my-app` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
+Run `npm run lint:all:fix` to fix the lint errors.
 
-Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
+### Config params
 
-## Understand your workspace
+1. `NX_BACKEND_URL`- api endpoint
+2. `NX_CRYPTO_JS_KEY` - key for decrypt & encrypt
 
-Run `nx graph` to see a diagram of the dependencies of your projects.
+Code Splitting
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-## Further help
+Analyzing the Bundle Size
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-Visit the [Nx Documentation](https://nx.dev) to learn more.
+Making a Progressive Web App
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+Advanced Configuration
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+Deployment
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+yarn build fails to minify
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 
-
-## ☁ Nx Cloud
-
-### Distributed Computation Caching & Distributed Task Execution
-
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-cloud-card.png"></p>
-
-Nx Cloud pairs with Nx in order to enable you to build and test code more rapidly, by up to 10 times. Even teams that are new to Nx can connect to Nx Cloud and start saving time instantly.
-
-Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
-
-Visit [Nx Cloud](https://nx.app/) to learn more.
+Created by Extrawest React.js Team
+Extrawest.com, 2022
