@@ -1,1 +1,1 @@
-export * from './lib/shared-hooks';
+export * from "./lib/useShowSnackBarMessage/useShowSnackBarMessage";
