@@ -2,7 +2,16 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "redux": "libs/redux",
+    "shared": "libs/shared",
+    "shared-hoks": "libs/shared/hoks",
+    "shared-hooks": "libs/shared/hooks",
+    "shared-permissions": "libs/shared/permissions",
+    "shared-types": "libs/shared/types",
+    "shared-ui": "libs/shared/ui",
+    "shared-utils": "libs/shared/utils",
     "template": "apps/template",
-    "template-e2e": "apps/template-e2e"
+    "template-e2e": "apps/template-e2e",
+    "tamplateapp": "libs/tamplateapp"
   }
 }
