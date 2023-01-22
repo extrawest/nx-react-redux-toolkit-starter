@@ -6,7 +6,7 @@ import {
 	PrivateRoute,
 	PageLayout,
 	PublicRoute
-} from "@mono-redux-starter/tamplateapp";
+} from "@mono-redux-starter/templateapp";
 import { commonRoutes } from "./commonRoutes";
 import { privateRoutes } from "./privateRoutes";
 
@@ -19,7 +19,7 @@ const AppRoutes: FC = () => {
 					display="flex"
 					justifyContent="center"
 					alignItems="center"
-					height={"100vh"}
+					height="100vh"
 				>
 					<Loader />
 				</Box>

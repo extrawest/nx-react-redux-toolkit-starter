@@ -7,7 +7,7 @@ import {
 } from "@casl/ability";
 import { AnyObject } from "@casl/ability/dist/types/types";
 import { User } from "@mono-redux-starter/shared/types";
-import { RootReduxState } from "@mono-redux-starter/tamplateapp";
+import { RootReduxState } from "@mono-redux-starter/templateapp";
 
 import { defineRulesFor } from "./rules";
 

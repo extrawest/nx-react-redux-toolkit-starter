@@ -12,6 +12,6 @@
     "shared-utils": "libs/shared/utils",
     "template": "apps/template",
     "template-e2e": "apps/template-e2e",
-    "tamplateapp": "libs/tamplateapp"
+    "templateapp": "libs/templateapp"
   }
 }

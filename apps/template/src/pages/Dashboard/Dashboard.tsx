@@ -1,7 +1,7 @@
 import { FC } from "react";
-import { DashboardContainer } from "@mono-redux-starter/tamplateapp";
+import { DashboardContainer } from "@mono-redux-starter/templateapp";
 
-export const Dashboard: FC = () =>  (
+export const Dashboard: FC = () => (
 	<DashboardContainer />
 );
 
