@@ -1,5 +1,23 @@
+# React starter with NX dev tools and typescript
+
+![Maintaner](https://img.shields.io/badge/maintainer-extrawest.com-blue)
+![GitHub license](https://img.shields.io/github/license/extrawest/react-nx-starter)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/extrawest/react-nx-starter/graphs/commit-activity)
+![GitHub release](https://img.shields.io/github/v/release/extrawest/react-nx-starter)
+[![GitHub tag](https://img.shields.io/github/v/tag/extrawest/react-nx-starter)](https://github.com/extrawest/react-nx-starter/tags/)
+
+### List of Tools
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)
+![Material UI](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=mui&logoColor=white)
+![Nx](https://img.shields.io/badge/workspace-143157?style=for-the-badge&logo=NX&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCB2B?style=for-the-badge&logo=firebase&logoColor=333333)
 
 ### Project structure
+
 ```text
 react_app
 ├──  .env
@@ -29,7 +47,7 @@ react_app
     |  └── ...
 ├── libs
     ├── redux
-    |   |──src 
+    |   |──src
     |   |   ├── apis
     |   |   |   ├── ...
     |   |   ├── axios
@@ -37,9 +55,9 @@ react_app
     |   |   ├── middleware
     |   |   |   ├── ...
     |   |   ├── slices
-    |   |       ├── ...          
+    |   |       ├── ...
 │   ├── shared
-    |   |──src 
+    |   |──src
     |   |   ├── hocs
     |   |   |   ├── ...
     |   |   ├── hooks
@@ -81,7 +99,7 @@ react_app
             ├── utils
             |   ├── ....
             |──...
-
+```
 
 # Available Scripts
 
@@ -96,13 +114,12 @@ npm i || yarn install
 
 ## Development server
 
-For a dev templatel server run: 
+For a dev templatel server run:
 `npm run start:template`
 or
 `yarn start:template`.
 
 Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
-
 
 ## Build
 
@@ -122,25 +139,8 @@ Run `npm run lint:all:fix` to fix the lint errors.
 
 1. `NX_BACKEND_URL`- api endpoint
 2. `NX_CRYPTO_JS_KEY` - key for decrypt & encrypt
+3. `NX_SITE_NAME` - setup site name
 
-Code Splitting
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Created by Extrawest React.js Team
 
-Analyzing the Bundle Size
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-Making a Progressive Web App
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-Advanced Configuration
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-Deployment
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-yarn build fails to minify
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-
-
-Created by Extrawest React.js Team
-Extrawest.com, 2022
+## Extrawest.com, 2023
