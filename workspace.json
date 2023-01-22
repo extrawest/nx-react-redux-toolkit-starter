@@ -4,7 +4,7 @@
   "projects": {
     "redux": "libs/redux",
     "shared": "libs/shared",
-    "shared-hoks": "libs/shared/hoks",
+    "shared-hocs": "libs/shared/hocs",
     "shared-hooks": "libs/shared/hooks",
     "shared-permissions": "libs/shared/permissions",
     "shared-types": "libs/shared/types",

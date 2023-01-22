@@ -1,6 +1,6 @@
 {
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/shared/hoks/src",
+  "sourceRoot": "libs/shared/hocs/src",
   "projectType": "library",
   "tags": [],
   "targets": {
@@ -8,14 +8,14 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/shared/hoks/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["libs/shared/hocs/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/shared/hoks"],
+      "outputs": ["coverage/libs/shared/hocs"],
       "options": {
-        "jestConfig": "libs/shared/hoks/jest.config.ts",
+        "jestConfig": "libs/shared/hocs/jest.config.ts",
         "passWithNoTests": true
       }
     }

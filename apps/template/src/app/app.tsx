@@ -8,12 +8,12 @@ import { SnackbarProvider } from "notistack";
 import { ThemeProvider } from "@mui/material/styles";
 import { abilityCheckStorage, AbilityContext } from "@mono-redux-starter/shared/permissions";
 import { YupGlobalLocale } from "@mono-redux-starter/shared/ui";
-import { AppIntlProvider } from "@mono-redux-starter/shared/hoks";
+import { AppIntlProvider } from "@mono-redux-starter/shared/hocs";
 import {
 	store,
 	Loader,
 	persistor,
-	AuthContext 
+	AuthContext
 } from "@mono-redux-starter/tamplateapp";
 import AppRoutes from "../routes";
 import { theme } from "../theme";
@@ -24,42 +24,42 @@ export const App: FC = () => (
 	<Provider store={store}>
 		<HelmetProvider>
 			<AppIntlProvider>
-					<ThemeProvider theme={theme}>
-						<PersistGate
-							loading={
-								<Box
-									component="div"
-									sx={{
-										display: "flex",
-										justifyContent: "center",
-										alignItems: "center",
-										minHeight: "100vh",
+				<ThemeProvider theme={theme}>
+					<PersistGate
+						loading={
+							<Box
+								component="div"
+								sx={{
+									display: "flex",
+									justifyContent: "center",
+									alignItems: "center",
+									minHeight: "100vh",
+								}}
+							>
+								<Loader />
+							</Box>
+						}
+						persistor={persistor}
+					>
+						<BrowserRouter>
+							<AbilityContext.Provider value={ability}>
+								<SnackbarProvider
+									maxSnack={3}
+									anchorOrigin={{
+										horizontal: "center",
+										vertical: "bottom"
 									}}
 								>
-									<Loader />
-								</Box>
-							}
-							persistor={persistor}
-						>
-							<BrowserRouter>
-								<AbilityContext.Provider value={ability}>
-									<SnackbarProvider
-										maxSnack={3}
-										anchorOrigin={{
-											horizontal: "center",
-											vertical: "bottom"
-										}}
-									>
-										<AuthContext>
-											<CssBaseline />
-											<YupGlobalLocale />
-											<AppRoutes />
-										</AuthContext>
-									</SnackbarProvider>
-								</AbilityContext.Provider>
-							</BrowserRouter>
-						</PersistGate>
-					</ThemeProvider>
+									<AuthContext>
+										<CssBaseline />
+										<YupGlobalLocale />
+										<AppRoutes />
+									</AuthContext>
+								</SnackbarProvider>
+							</AbilityContext.Provider>
+						</BrowserRouter>
+					</PersistGate>
+				</ThemeProvider>
 			</AppIntlProvider>
 		</HelmetProvider>
 	</Provider>
